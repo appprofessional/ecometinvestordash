@@ -4,6 +4,7 @@ import { Button } from "./components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./components/ui/tabs";
 import { Layers, ShoppingCart, Package, Banknote, Percent, TrendingUp, RotateCcw, Receipt, Wallet } from "lucide-react";
 import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, Legend, LineChart, Line, PieChart, Pie, Cell } from "recharts";
+import Starfield from "./components/Starfield";
 
 const DATA = {
   meta: { period: "Apr 1 – Aug 31, 2025" },
@@ -201,6 +202,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-black text-neutral-100 relative overflow-hidden">
+      <Starfield />
       <div className="relative z-10 mx-auto max-w-7xl px-4 py-8">
         <header className="mb-6 flex items-start justify-between">
           <div>
